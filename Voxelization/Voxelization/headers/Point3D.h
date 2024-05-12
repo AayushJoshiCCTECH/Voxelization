@@ -1,6 +1,6 @@
 #pragma once
 #include<iostream>
-#include "pch.h"
+//#include "pch.h"
 class Point3D
 {
 public:

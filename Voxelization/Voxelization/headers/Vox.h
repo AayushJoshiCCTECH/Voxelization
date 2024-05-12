@@ -1,32 +1,12 @@
 #pragma once
-
-//#include <QtWidgets/QMainWindow>
-//#include "ui_Vox.h"
-
-//class Vox : public QMainWindow
-//{
-//    Q_OBJECT
-//
-//public:
-//    Vox(QWidget *parent = nullptr);
-//    ~Vox();
-//
-//private:
-//    Ui::VoxClass ui;
-//};
-
-
-
-
-
-
-#pragma once
+#include <qgridlayout.h>
 #include <QtWidgets/QMainWindow>
 #include <QMainWindow>
 #include <QPushButton>
 #include <QFileDialog>
 #include <QSpinBox>
 #include <QColorDialog>
+#include <qlabel.h>
 #include "Triangle.h"
 class OpenGLWindow;
 
@@ -42,15 +22,22 @@ public:
 private:
     void setupUi();
 
+    static QString randomColor();
+
 private:
-    QPushButton* mOpenButton;
+    QWidget* mWidget;
+    QPushButton* mBrowseButton;
     QPushButton* mRenderButton;
     QPushButton* mVoxelizeButton;
     QPushButton* mColorDialogButton;
     QSpinBox* mSpinBox;
+    QLabel* mSizeLabel;
     OpenGLWindow* mRenderer;
+    QGridLayout* mGridLayout;
 
 private:
+    void setRandomBackgroundColor(QPushButton* button);
+    void setRandomBackgroundColor(QSpinBox* spinBox);
     void openFileDialog();
     void showColorDialog();
     void renderSTL();

@@ -11,7 +11,6 @@ class QOpenGLTexture;
 class QOpenGLShader;
 class QOpenGLShaderProgram;
 class QOpenGLPaintDevice;
-
 class OpenGLWindow : public QOpenGLWidget, protected QOpenGLFunctions
 {
     Q_OBJECT
@@ -29,7 +28,7 @@ public:
     void voxelRenderer(std::string fileName, int voxelSize);
 
 public:
-    void shaderWatcher();
+    
     QString readShader(QString filePath);
     void selectColor();
 
