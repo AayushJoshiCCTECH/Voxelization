@@ -1,0 +1,12 @@
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\src\Model\GeomContainer.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\GeomContainer.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\src\View\OpenGLWindow.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\OpenGLWindow.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\src\Model\Point3D.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\Point3D.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\src\Model\stdafx.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\stdafx.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\src\Model\STLReader.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\STLReader.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\src\Model\Triangle.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\Triangle.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\src\Controller\Visualizer.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\Visualizer.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\src\Model\Voxelizer.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\Voxelizer.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\main.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\main.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\rcc\qrc_Voxelization.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\qrc_Voxelization.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\moc\moc_Visualizer.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\moc_Visualizer.obj
+D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\moc\moc_OpenGLWindow.cpp;D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\Voxelization\x64\Debug\moc_OpenGLWindow.obj
