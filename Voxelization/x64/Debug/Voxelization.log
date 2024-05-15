@@ -1,0 +1,11 @@
+﻿  moc headers\Controller\Visualizer.h
+  moc headers\View\OpenGLWindow.h
+  main.cpp
+  Visualizer.cpp
+  STLReader.cpp
+  Triangle.cpp
+  Voxelizer.cpp
+  OpenGLWindow.cpp
+  moc_OpenGLWindow.cpp
+  moc_Visualizer.cpp
+  Voxelization.vcxproj -> D:\Aayush_Joshi_Workspace\Aayush_Joshi\Voxelization\x64\Debug\Voxelization.exe
