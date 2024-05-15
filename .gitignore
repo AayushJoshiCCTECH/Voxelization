@@ -35,4 +35,5 @@
 /.vs
 
 /x64/Debug
-/Voxelization/resources/*.stl
+Voxelization/resources/*.stl
+Voxelization/resources/Traffic_Cone.stl
