@@ -35,7 +35,6 @@ public:
 private:
     // Function to set up UI
     void setupUi();
-    void onColorDialogButtonClicked();
     // Function to generate random color
     static QString randomColor();
 
@@ -67,6 +66,8 @@ private:
 
     // Function to voxelize STL file
     void voxelizeSTL();
+
+    void onColorDialogButtonClicked();
 
 
 };

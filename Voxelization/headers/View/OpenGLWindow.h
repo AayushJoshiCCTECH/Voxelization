@@ -36,7 +36,10 @@ public:
 	// Render an STL file
 	void STLRenderer(std::string fileName);
 
-	void selectColor(const QColor& color);
+	//---------------------------------------------
+	void selectColor();
+	//---------------------------------------------
+	//void selectColor(const QColor& color);
 
 
 	// Render voxels
@@ -68,7 +71,7 @@ private:
 	QMetaObject::Connection mContextWatchConnection; // Connection for OpenGL context
 	GLint m_posAttr = 0; // Attribute location for position
 	GLint m_colAttr = 0; // Attribute location for color
-	GLint m_normalAttr = 0; // Attribute location for normal
+	GLint m_normAttr = 0; // Attribute location for normal
 	GLint m_matrixUniform = 0; // Uniform location for matrix
 	QVector<QVector2D> mPixelVertices; // Pixel vertices
 
@@ -85,6 +88,17 @@ private:
 	QQuaternion rotationAngle; // Rotation angle
 	QPoint lastPos; // Last mouse position
 	float r = 0.0f, g = 1.0f, b = 1.0f; // Color components
+
+	GLint mLightPosUniform;
+	GLint mViewPosUniform;
+	GLint mLightColorUniform;
+	GLint mObjectColorUniform;
+	GLint m_projectionMatrixUniform = 0;
+	GLint m_viewMatrixUniform = 0;
+	GLint m_modelMatrixUniform = 0;
+	GLint m_normalMatrixUniform = 0;
+	GLint m_lightPosUniform = 0;
+
 
 };
 

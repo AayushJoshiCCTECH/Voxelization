@@ -188,18 +188,43 @@ void Visualizer::voxelizeSTL()
 }
 
 
+//void Visualizer::onColorDialogButtonClicked()
+//{
+//	static QColor selectedColor = QColorDialog::getColor();
+//	if (selectedColor.isValid())
+//	{
+//		// User selected a valid color, update the shape color
+//		mRenderer->selectColor(selectedColor);
+//	}
+//	else
+//	{
+//		// Invalid color selected or dialog canceled
+//		qWarning() << "Invalid color selected or dialog canceled.";
+//	}
+//}
+
+//------------------------------------------------------
+//void OpenGLWindow::selectColor()
+//{
+//	QColorDialog colorDialog;
+//	QColor selectedColor = colorDialog.getColor();
+//
+//	if (selectedColor.isValid()) {
+//		// Set the selected color
+//		r = selectedColor.redF();
+//		g = selectedColor.greenF();
+//		b = selectedColor.blueF();
+//		update();
+//	}
+//	else {
+//		qWarning() << "Invalid color selected or dialog canceled.";
+//	}
+//}
+
 void Visualizer::onColorDialogButtonClicked()
 {
-	static QColor selectedColor = QColorDialog::getColor();
-	if (selectedColor.isValid())
-	{
-		// User selected a valid color, update the shape color
-		mRenderer->selectColor(selectedColor);
-	}
-	else
-	{
-		// Invalid color selected or dialog canceled
-		qWarning() << "Invalid color selected or dialog canceled.";
-	}
+	mRenderer->selectColor();
 }
+
+//--------------------------------------------------------
 

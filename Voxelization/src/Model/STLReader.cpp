@@ -45,19 +45,19 @@ void STLReader::readSTL(std::string filePath, std::vector<Point3D>& vertices, st
     while (std::getline(dataFile, line))
     {
         // Check if the line contains "normal" which indicates normal vectors
-        if (line.find("normal") != std::string::npos)
+        if (line.find("facet normal") != std::string::npos)
         {
             std::istringstream iss(line);
             std::string token;
-            float x, y, z;
+            float x;
+            float y;
+            float z;
             iss >> token >> x >> y >> z;
 
             // Create normal vector
             Point3D normal(x, y, z);
 
             // Add normal to the normals vector (for each vertex of the triangle)
-            normals.push_back(normal);
-            normals.push_back(normal);
             normals.push_back(normal);
         }
         // Check if the line contains "vertex" which indicates vertex coordinates
@@ -70,8 +70,7 @@ void STLReader::readSTL(std::string filePath, std::vector<Point3D>& vertices, st
 
             // Create first vertex
             Point3D p1(x, y, z);
-            // Create first color (red)
-            Point3D c1(1.0f, 0.0f, 0.0f);
+            
 
             // Read next line for second vertex coordinates
             std::getline(dataFile, line);
@@ -82,8 +81,7 @@ void STLReader::readSTL(std::string filePath, std::vector<Point3D>& vertices, st
 
             // Create second vertex
             Point3D p2(x1, y1, z1);
-            // Create second color (red)
-            Point3D c2(1.0f, 0.0f, 0.0f);
+            
 
             // Read next line for third vertex coordinates
             std::getline(dataFile, line);
@@ -94,14 +92,15 @@ void STLReader::readSTL(std::string filePath, std::vector<Point3D>& vertices, st
 
             // Create third vertex
             Point3D p3(x2, y2, z2);
-            // Create third color (red)
-            Point3D c3(1.0f, 0.0f, 0.0f);
+
 
             // Add vertices (forming a triangle) to the vertices vector
             vertices.push_back(p1);
             vertices.push_back(p2);
             vertices.push_back(p3);
             vertices.push_back(p1);
+
+            colors.push_back(Point3D(1.0f, 0.0f, 0.0f));
 
         }
     }
